@@ -1,0 +1,26 @@
+You are an expert in UX/UI design and data visualization, tasked with designing an engaging experience for a desktop web application 
+I'm developing. The application enables users to input an API URL, a mandatory user-defined label for the API search, and an API key (If needed)  into separate fields, with a test button to verify the validity of the API call. Users will receive notifications indicating success or failure of the API call, along with the associated messages.
+
+On successful API calls, the application presents the user with a rich array of tools for data discovery, which they can visually 
+manipulate using tools like D3, and will need to include some bespoke SVG derived from D3. The application should offer a seamless transition from a D3-generated hierarchy (https://observablehq.com/@d3/d3-hierarchy)  to a more intricate SVG visualization. 
+For example, if the histogram represents population density, the visualization could creatively transform the histogram bars into shapes 
+of people.
+
+Users can save their bespoke visualizations, as well as the underlying data, directly into SQLite (https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB) as an SVG Meta file. Users also have the ability to add annotations or comments to their saved visualizations, making it a more personalized tool. Moreover, the application offers a 'favorites' system, allowing users to bookmark their most frequently used API calls for quick access.
+
+The application also enables sharing of saved visualizations with others, making it a collaborative tool. In terms of interactivity, 
+the application should creatively use mouseovers to change the size and colors of visual elements, enhancing the dynamic and engaging 
+experience. Users also have the ability to compare different visualizations side-by-side for a more detailed analysis. 
+
+The user should be able to personalise their visualisation. For example they should be able to edit the visualisation output by editing the text labels.
+
+An essential feature for the application is a user-friendly interface for managing and organizing saved visualizations and data. 
+This should take the form of a table, where each row corresponds to an API call. The table columns should include date, user-provided label, and checkboxes indicating the number of stored visualizations (0 to 3) per API call. At the top of the table page, include a search filter that allows users to filter entries by date range and by the user-provided label. Each row should also include a button on the right for further user actions.
+
+To further enhance its utility, the application should offer the functionality for users to export their saved visualizations as images or 
+PDFs for offline use or presentations.
+
+For new users, the application should offer a guided tutorial highlighting its features and demonstrating how to create engaging 
+visualizations. This tutorial will aid in familiarizing users with the system and encouraging exploration of the application's capabilities.
+
+Finally, provide a user journey narrative illustrating a user retrieving information about different independent countries and visually exploring various characteristics like population, area, languages, etc.

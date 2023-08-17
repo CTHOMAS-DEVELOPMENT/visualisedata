@@ -1,0 +1,16 @@
+http://dog-api.kinduff.com/api/facts
+https://random-d.uk/api/random
+http://colormind.io/api/
+https://whiskyhunter.net/api/auctions_data/?format=json
+
+{
+  "id": 7,
+  "url": "http://colormind.io/list/",
+  "visualizationName": "ColorMind",
+  "data": "{\"result\":[\"ui\",\"default\",\"makoto_shinkai\",\"metroid_fusion\",\"lego_movie\",\"the_fall\"]}"
+}
+
+https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVin/5UXWX7C5*BA?format=xml&modelyear=2011
+https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinExtended/5UXWX7C5*BA?format=json&modelyear=2011
+
+https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinExtended/5UXWX7C5*BA?format=json&modelyear=2011

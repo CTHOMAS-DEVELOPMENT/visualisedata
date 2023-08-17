@@ -1,0 +1,172 @@
+{
+  "id": 3,
+  "url": "https://restcountries.com/v3.1/independent?status=true",
+  "visualizationName": "countries",
+  "data": "[]",
+  "response": [
+    {
+      "name": {
+        "common": "Andorra",
+        "official": "Principality of Andorra",
+        "nativeName": {
+          "cat": { "official": "Principat d'Andorra", "common": "Andorra" }
+        }
+      },
+      "tld": [".ad"],
+      "cca2": "AD",
+      "ccn3": "020",
+      "cca3": "AND",
+      "cioc": "AND",
+      "independent": true,
+      "status": "officially-assigned",
+      "unMember": true,
+      "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+      "idd": { "root": "+3", "suffixes": ["76"] },
+      "capital": ["Andorra la Vella"],
+      "altSpellings": ["AD", "Principality of Andorra", "Principat d'Andorra"],
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "languages": { "cat": "Catalan" },
+      "translations": {
+        "ara": { "official": "إمارة أندورا", "common": "أندورا" },
+        "bre": { "official": "Priñselezh Andorra", "common": "Andorra" },
+        "ces": { "official": "Andorrské knížectví", "common": "Andorra" },
+        "cym": { "official": "Tywysogaeth Andorra", "common": "Andorra" },
+        "deu": { "official": "Fürstentum Andorra", "common": "Andorra" },
+        "est": { "official": "Andorra Vürstiriik", "common": "Andorra" },
+        "fin": { "official": "Andorran ruhtinaskunta", "common": "Andorra" },
+        "fra": { "official": "Principauté d'Andorre", "common": "Andorre" },
+        "hrv": { "official": "Kneževina Andora", "common": "Andora" },
+        "hun": { "official": "Andorra", "common": "Andorra" },
+        "ita": { "official": "Principato di Andorra", "common": "Andorra" },
+        "jpn": { "official": "アンドラ公国", "common": "アンドラ" },
+        "kor": { "official": "안도라 공국", "common": "안도라" },
+        "nld": { "official": "Prinsdom Andorra", "common": "Andorra" },
+        "per": { "official": "شاهزاده‌نشین آندورا", "common": "آندورا" },
+        "pol": { "official": "Księstwo Andory", "common": "Andora" },
+        "por": { "official": "Principado de Andorra", "common": "Andorra" },
+        "rus": { "official": "Княжество Андорра", "common": "Андорра" },
+        "slk": { "official": "Andorrské kniežatstvo", "common": "Andorra" },
+        "spa": { "official": "Principado de Andorra", "common": "Andorra" },
+        "srp": { "official": "Кнежевина Андора", "common": "Андора" },
+        "swe": { "official": "Furstendömet Andorra", "common": "Andorra" },
+        "tur": { "official": "Andorra Prensliği", "common": "Andorra" },
+        "urd": { "official": "اماراتِ انڈورا", "common": "انڈورا" },
+        "zho": { "official": "安道尔公国", "common": "安道尔" }
+      },
+      "latlng": [42.5, 1.5],
+      "landlocked": true,
+      "borders": ["FRA", "ESP"],
+      "area": 468,
+      "demonyms": {
+        "eng": { "f": "Andorran", "m": "Andorran" },
+        "fra": { "f": "Andorrane", "m": "Andorran" }
+      },
+      "flag": "🇦🇩",
+      "maps": {
+        "googleMaps": "https://goo.gl/maps/JqAnacWE2qEznKgw7",
+        "openStreetMaps": "https://www.openstreetmap.org/relation/9407"
+      },
+      "population": 77265,
+      "fifa": "AND",
+      "car": { "signs": ["AND"], "side": "right" },
+      "timezones": ["UTC+01:00"],
+      "continents": ["Europe"],
+      "flags": {
+        "png": "https://flagcdn.com/w320/ad.png",
+        "svg": "https://flagcdn.com/ad.svg",
+        "alt": "The flag of Andorra features three equal vertical bands of blue, yellow and red, with the coat of arms of Andorra centered in the yellow band."
+      },
+      "coatOfArms": {
+        "png": "https://mainfacts.com/media/images/coats_of_arms/ad.png",
+        "svg": "https://mainfacts.com/media/images/coats_of_arms/ad.svg"
+      },
+      "startOfWeek": "monday",
+      "capitalInfo": { "latlng": [42.5, 1.52] },
+      "postalCode": { "format": "AD###", "regex": "^(?:AD)*(\\d{3})$" }
+    },
+    {
+      "name": {
+        "common": "Cuba",
+        "official": "Republic of Cuba",
+        "nativeName": {
+          "spa": { "official": "República de Cuba", "common": "Cuba" }
+        }
+      },
+      "tld": [".cu"],
+      "cca2": "CU",
+      "ccn3": "192",
+      "cca3": "CUB",
+      "cioc": "CUB",
+      "independent": true,
+      "status": "officially-assigned",
+      "unMember": true,
+      "currencies": {
+        "CUC": { "name": "Cuban convertible peso", "symbol": "$" },
+        "CUP": { "name": "Cuban peso", "symbol": "$" }
+      },
+      "idd": { "root": "+5", "suffixes": ["3"] },
+      "capital": ["Havana"],
+      "altSpellings": ["CU", "Republic of Cuba", "República de Cuba"],
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "languages": { "spa": "Spanish" },
+      "translations": {
+        "ara": { "official": "جمهورية كوبا", "common": "كوبا" },
+        "bre": { "official": "Republik Kuba", "common": "Kuba" },
+        "ces": { "official": "Kubánská republika", "common": "Kuba" },
+        "cym": { "official": "Gweriniaeth Ciwba", "common": "Ciwba" },
+        "deu": { "official": "Republik Kuba", "common": "Kuba" },
+        "est": { "official": "Kuuba Vabariik", "common": "Kuuba" },
+        "fin": { "official": "Kuuban tasavalta", "common": "Kuuba" },
+        "fra": { "official": "République de Cuba", "common": "Cuba" },
+        "hrv": { "official": "Republika Kuba", "common": "Kuba" },
+        "hun": { "official": "Kubai Köztársaság", "common": "Kuba" },
+        "ita": { "official": "Repubblica di Cuba", "common": "Cuba" },
+        "jpn": { "official": "キューバ共和国", "common": "キューバ" },
+        "kor": { "official": "쿠바 공화국", "common": "쿠바" },
+        "nld": { "official": "Republiek Cuba", "common": "Cuba" },
+        "per": { "official": "جمهوری کوبا", "common": "کوبا" },
+        "pol": { "official": "Republika Kuby", "common": "Kuba" },
+        "por": { "official": "República de Cuba", "common": "Cuba" },
+        "rus": { "official": "Республика Куба", "common": "Куба" },
+        "slk": { "official": "Kubánska republika", "common": "Kuba" },
+        "spa": { "official": "República de Cuba", "common": "Cuba" },
+        "srp": { "official": "Република Куба", "common": "Куба" },
+        "swe": { "official": "Republiken Kuba", "common": "Kuba" },
+        "tur": { "official": "Küba Cumhuriyeti", "common": "Küba" },
+        "urd": { "official": "جمہوریہ کیوبا", "common": "کیوبا" },
+        "zho": { "official": "古巴共和国", "common": "古巴" }
+      },
+      "latlng": [21.5, -80],
+      "landlocked": false,
+      "area": 109884,
+      "demonyms": {
+        "eng": { "f": "Cuban", "m": "Cuban" },
+        "fra": { "f": "Cubaine", "m": "Cubain" }
+      },
+      "flag": "🇨🇺",
+      "maps": {
+        "googleMaps": "https://goo.gl/maps/1dDw1QfZspfMUTm99",
+        "openStreetMaps": "https://www.openstreetmap.org/relation/307833"
+      },
+      "population": 11326616,
+      "fifa": "CUB",
+      "car": { "signs": ["C"], "side": "right" },
+      "timezones": ["UTC-05:00"],
+      "continents": ["North America"],
+      "flags": {
+        "png": "https://flagcdn.com/w320/cu.png",
+        "svg": "https://flagcdn.com/cu.svg",
+        "alt": "The flag of Cuba is composed of five equal horizontal bands of blue alternating with white and a red equilateral triangle superimposed on the hoist side of the field. The triangle has its base on the hoist end, spans about two-fifth the width of the field and bears a white five-pointed star at its center."
+      },
+      "coatOfArms": {
+        "png": "https://mainfacts.com/media/images/coats_of_arms/cu.png",
+        "svg": "https://mainfacts.com/media/images/coats_of_arms/cu.svg"
+      },
+      "startOfWeek": "monday",
+      "capitalInfo": { "latlng": [23.12, -82.35] },
+      "postalCode": { "format": "CP #####", "regex": "^(?:CP)*(\\d{5})$" }
+    }
+  ]
+}

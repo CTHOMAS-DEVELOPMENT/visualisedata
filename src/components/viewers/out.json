@@ -1,0 +1,320 @@
+{
+    "name": "Root",
+    "children": [
+        {
+            "name": "Object 1",
+            "children": [
+                {
+                    "name": "tld: [\".lt\"]",
+                    "children": [
+                        {
+                            "name": "0: .lt"
+                        }
+                    ]
+                },
+                {
+                    "name": "cca2: LT"
+                },
+                {
+                    "name": "ccn3: 440"
+                },
+                {
+                    "name": "cca3: LTU"
+                },
+                {
+                    "name": "cioc: LTU"
+                },
+                {
+                    "name": "independent: true"
+                },
+                {
+                    "name": "status: officially-assigned"
+                },
+                {
+                    "name": "unMember: true"
+                },
+                {
+                    "name": "currencies: {\"EUR\":{\"name\":\"Euro\",\"symbol\":\"€\"}}",
+                    "children": [
+                        {
+                            "name": "EUR: {\"name\":\"Euro\",\"symbol\":\"€\"}"
+                        }
+                    ]
+                },
+                {
+                    "name": "idd: {\"root\":\"+3\",\"suffixes\":[\"70\"]}",
+                    "children": [
+                        {
+                            "name": "root: +3"
+                        },
+                        {
+                            "name": "suffixes: [\"70\"]"
+                        }
+                    ]
+                },
+                {
+                    "name": "capital: [\"Vilnius\"]",
+                    "children": [
+                        {
+                            "name": "0: Vilnius"
+                        }
+                    ]
+                },
+                {
+                    "name": "altSpellings: [\"LT\",\"Republic of Lithuania\",\"Lietuvos Respublika\"]",
+                    "children": [
+                        {
+                            "name": "0: LT"
+                        },
+                        {
+                            "name": "1: Republic of Lithuania"
+                        },
+                        {
+                            "name": "2: Lietuvos Respublika"
+                        }
+                    ]
+                },
+                {
+                    "name": "region: Europe"
+                },
+                {
+                    "name": "subregion: Northern Europe"
+                },
+                {
+                    "name": "languages: {\"lit\":\"Lithuanian\"}",
+                    "children": [
+                        {
+                            "name": "lit: Lithuanian"
+                        }
+                    ]
+                },
+                {
+                    "name": "translations: {\"ara\":{\"official\":\"جمهورية ليتوانيا\",\"common\":\"ليتوانيا\"},\"bre\":{\"official\":\"Republik Lituania\",\"common\":\"Lituania\"},\"ces\":{\"official\":\"Litevská republika\",\"common\":\"Litva\"},\"cym\":{\"official\":\"Republic of Lithuania\",\"common\":\"Lithuania\"},\"deu\":{\"official\":\"Republik Litauen\",\"common\":\"Litauen\"},\"est\":{\"official\":\"Leedu Vabariik\",\"common\":\"Leedu\"},\"fin\":{\"official\":\"Liettuan tasavalta\",\"common\":\"Liettua\"},\"fra\":{\"official\":\"République de Lituanie\",\"common\":\"Lituanie\"},\"hrv\":{\"official\":\"Republika Litva\",\"common\":\"Litva\"},\"hun\":{\"official\":\"Litván Köztársaság\",\"common\":\"Litvánia\"},\"ita\":{\"official\":\"Repubblica di Lituania\",\"common\":\"Lituania\"},\"jpn\":{\"official\":\"リトアニア共和国\",\"common\":\"リトアニア\"},\"kor\":{\"official\":\"리투아니아 공화국\",\"common\":\"리투아니아\"},\"nld\":{\"official\":\"Republiek Litouwen\",\"common\":\"Litouwen\"},\"per\":{\"official\":\"لیتوانیایی‌ها\",\"common\":\"لیتوانیایی‌ها\"},\"pol\":{\"official\":\"Republika Litewska\",\"common\":\"Litwa\"},\"por\":{\"official\":\"República da Lituânia\",\"common\":\"Lituânia\"},\"rus\":{\"official\":\"Литовская Республика\",\"common\":\"Литва\"},\"slk\":{\"official\":\"Litovská republika\",\"common\":\"Litva\"},\"spa\":{\"official\":\"República de Lituania\",\"common\":\"Lituania\"},\"srp\":{\"official\":\"Литванска Република\",\"common\":\"Литванија\"},\"swe\":{\"official\":\"Republiken Litauen\",\"common\":\"Litauen\"},\"tur\":{\"official\":\"Litvanya Cumhuriyeti\",\"common\":\"Litvanya\"},\"urd\":{\"official\":\"جمہوریہ لتھووینیا\",\"common\":\"لتھووینیا\"},\"zho\":{\"official\":\"立陶宛共和国\",\"common\":\"立陶宛\"}}",
+                    "children": [
+                        {
+                            "name": "ara: {\"official\":\"جمهورية ليتوانيا\",\"common\":\"ليتوانيا\"}"
+                        },
+                        {
+                            "name": "bre: {\"official\":\"Republik Lituania\",\"common\":\"Lituania\"}"
+                        },
+                        {
+                            "name": "ces: {\"official\":\"Litevská republika\",\"common\":\"Litva\"}"
+                        },
+                        {
+                            "name": "cym: {\"official\":\"Republic of Lithuania\",\"common\":\"Lithuania\"}"
+                        },
+                        {
+                            "name": "deu: {\"official\":\"Republik Litauen\",\"common\":\"Litauen\"}"
+                        },
+                        {
+                            "name": "est: {\"official\":\"Leedu Vabariik\",\"common\":\"Leedu\"}"
+                        },
+                        {
+                            "name": "fin: {\"official\":\"Liettuan tasavalta\",\"common\":\"Liettua\"}"
+                        },
+                        {
+                            "name": "fra: {\"official\":\"République de Lituanie\",\"common\":\"Lituanie\"}"
+                        },
+                        {
+                            "name": "hrv: {\"official\":\"Republika Litva\",\"common\":\"Litva\"}"
+                        },
+                        {
+                            "name": "hun: {\"official\":\"Litván Köztársaság\",\"common\":\"Litvánia\"}"
+                        },
+                        {
+                            "name": "ita: {\"official\":\"Repubblica di Lituania\",\"common\":\"Lituania\"}"
+                        },
+                        {
+                            "name": "jpn: {\"official\":\"リトアニア共和国\",\"common\":\"リトアニア\"}"
+                        },
+                        {
+                            "name": "kor: {\"official\":\"리투아니아 공화국\",\"common\":\"리투아니아\"}"
+                        },
+                        {
+                            "name": "nld: {\"official\":\"Republiek Litouwen\",\"common\":\"Litouwen\"}"
+                        },
+                        {
+                            "name": "per: {\"official\":\"لیتوانیایی‌ها\",\"common\":\"لیتوانیایی‌ها\"}"
+                        },
+                        {
+                            "name": "pol: {\"official\":\"Republika Litewska\",\"common\":\"Litwa\"}"
+                        },
+                        {
+                            "name": "por: {\"official\":\"República da Lituânia\",\"common\":\"Lituânia\"}"
+                        },
+                        {
+                            "name": "rus: {\"official\":\"Литовская Республика\",\"common\":\"Литва\"}"
+                        },
+                        {
+                            "name": "slk: {\"official\":\"Litovská republika\",\"common\":\"Litva\"}"
+                        },
+                        {
+                            "name": "spa: {\"official\":\"República de Lituania\",\"common\":\"Lituania\"}"
+                        },
+                        {
+                            "name": "srp: {\"official\":\"Литванска Република\",\"common\":\"Литванија\"}"
+                        },
+                        {
+                            "name": "swe: {\"official\":\"Republiken Litauen\",\"common\":\"Litauen\"}"
+                        },
+                        {
+                            "name": "tur: {\"official\":\"Litvanya Cumhuriyeti\",\"common\":\"Litvanya\"}"
+                        },
+                        {
+                            "name": "urd: {\"official\":\"جمہوریہ لتھووینیا\",\"common\":\"لتھووینیا\"}"
+                        },
+                        {
+                            "name": "zho: {\"official\":\"立陶宛共和国\",\"common\":\"立陶宛\"}"
+                        }
+                    ]
+                },
+                {
+                    "name": "latlng: [56,24]",
+                    "children": [
+                        {
+                            "name": "0: 56"
+                        },
+                        {
+                            "name": "1: 24"
+                        }
+                    ]
+                },
+                {
+                    "name": "landlocked: false"
+                },
+                {
+                    "name": "borders: [\"BLR\",\"LVA\",\"POL\",\"RUS\"]",
+                    "children": [
+                        {
+                            "name": "0: BLR"
+                        },
+                        {
+                            "name": "1: LVA"
+                        },
+                        {
+                            "name": "2: POL"
+                        },
+                        {
+                            "name": "3: RUS"
+                        }
+                    ]
+                },
+                {
+                    "name": "area: 65300"
+                },
+                {
+                    "name": "demonyms: {\"eng\":{\"f\":\"Lithuanian\",\"m\":\"Lithuanian\"},\"fra\":{\"f\":\"Lituanienne\",\"m\":\"Lituanien\"}}",
+                    "children": [
+                        {
+                            "name": "eng: {\"f\":\"Lithuanian\",\"m\":\"Lithuanian\"}"
+                        },
+                        {
+                            "name": "fra: {\"f\":\"Lituanienne\",\"m\":\"Lituanien\"}"
+                        }
+                    ]
+                },
+                {
+                    "name": "flag: 🇱🇹"
+                },
+                {
+                    "name": "maps: {\"googleMaps\":\"https://goo.gl/maps/dd1s9rrLjrK2G8yY6\",\"openStreetMaps\":\"https://www.openstreetmap.org/relation/72596\"}",
+                    "children": [
+                        {
+                            "name": "googleMaps: https://goo.gl/maps/dd1s9rrLjrK2G8yY6"
+                        },
+                        {
+                            "name": "openStreetMaps: https://www.openstreetmap.org/relation/72596"
+                        }
+                    ]
+                },
+                {
+                    "name": "population: 2794700"
+                },
+                {
+                    "name": "gini: {\"2018\":35.7}",
+                    "children": [
+                        {
+                            "name": "2018: 35.7"
+                        }
+                    ]
+                },
+                {
+                    "name": "fifa: LTU"
+                },
+                {
+                    "name": "car: {\"signs\":[\"LT\"],\"side\":\"right\"}",
+                    "children": [
+                        {
+                            "name": "signs: [\"LT\"]"
+                        },
+                        {
+                            "name": "side: right"
+                        }
+                    ]
+                },
+                {
+                    "name": "timezones: [\"UTC+02:00\"]",
+                    "children": [
+                        {
+                            "name": "0: UTC+02:00"
+                        }
+                    ]
+                },
+                {
+                    "name": "continents: [\"Europe\"]",
+                    "children": [
+                        {
+                            "name": "0: Europe"
+                        }
+                    ]
+                },
+                {
+                    "name": "flags: {\"png\":\"https://flagcdn.com/w320/lt.png\",\"svg\":\"https://flagcdn.com/lt.svg\",\"alt\":\"The flag of Lithuania is composed of three equal horizontal bands of yellow, green and red.\"}",
+                    "children": [
+                        {
+                            "name": "png: https://flagcdn.com/w320/lt.png"
+                        },
+                        {
+                            "name": "svg: https://flagcdn.com/lt.svg"
+                        },
+                        {
+                            "name": "alt: The flag of Lithuania is composed of three equal horizontal bands of yellow, green and red."
+                        }
+                    ]
+                },
+                {
+                    "name": "coatOfArms: {\"png\":\"https://mainfacts.com/media/images/coats_of_arms/lt.png\",\"svg\":\"https://mainfacts.com/media/images/coats_of_arms/lt.svg\"}",
+                    "children": [
+                        {
+                            "name": "png: https://mainfacts.com/media/images/coats_of_arms/lt.png"
+                        },
+                        {
+                            "name": "svg: https://mainfacts.com/media/images/coats_of_arms/lt.svg"
+                        }
+                    ]
+                },
+                {
+                    "name": "startOfWeek: monday"
+                },
+                {
+                    "name": "capitalInfo: {\"latlng\":[54.68,25.32]}",
+                    "children": [
+                        {
+                            "name": "latlng: [54.68,25.32]"
+                        }
+                    ]
+                },
+                {
+                    "name": "postalCode: {\"format\":\"LT-#####\",\"regex\":\"^(?:LT)*(\\\\d{5})$\"}",
+                    "children": [
+                        {
+                            "name": "format: LT-#####"
+                        },
+                        {
+                            "name": "regex: ^(?:LT)*(\\d{5})$"
+                        }
+                    ]
+                }
+            ]
+        }]
+}

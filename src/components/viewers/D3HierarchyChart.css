@@ -1,0 +1,22 @@
+
+  /* Use 'pointer' cursor when hovering over a node */
+  .node {
+    cursor: pointer;
+  }
+  .menu-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 8px 12px;
+    fontSize: 16px;
+    backgroundColor: lightgray;
+    border: none;
+    borderRadius: 4px;
+    cursor: pointer;
+  }
+  
+  .hierarchy-chart {
+    width: 100%;
+    height: auto;
+    marginBottom: 50px;
+  }

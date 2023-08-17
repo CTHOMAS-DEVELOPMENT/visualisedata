@@ -1,0 +1,19 @@
+{
+  "id": 2,
+  "url": "https://jsonplaceholder.typicode.com/todos",
+  "visualizationName": "todos",
+  "response": [
+    {
+      "userId": 8,
+      "id": 160,
+      "title": "et praesentium aliquam est",
+      "completed": false
+    },
+    {
+      "userId": 7,
+      "id": 140,
+      "title": "aut consectetur in blanditiis deserunt quia sed laboriosam",
+      "completed": true
+    }
+  ]
+}

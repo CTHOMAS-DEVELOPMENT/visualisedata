@@ -1,0 +1,221 @@
+{
+    "id": 3,
+    "url": "https://restcountries.com/v3.1/independent?status=true",
+    "visualizationName": "countries",
+    "data": [],
+    "response": [
+        {
+            "name": {
+                "common": "Lithuania",
+                "official": "Republic of Lithuania",
+                "nativeName": {
+                    "lit": {
+                        "official": "Lietuvos Respublikos",
+                        "common": "Lietuva"
+                    }
+                }
+            },
+            "tld": [
+                ".lt"
+            ],
+            "cca2": "LT",
+            "ccn3": "440",
+            "cca3": "LTU",
+            "cioc": "LTU",
+            "independent": true,
+            "status": "officially-assigned",
+            "unMember": true,
+            "currencies": {
+                "EUR": {
+                    "name": "Euro",
+                    "symbol": "€"
+                }
+            },
+            "idd": {
+                "root": "+3",
+                "suffixes": [
+                    "70"
+                ]
+            },
+            "capital": [
+                "Vilnius"
+            ],
+            "altSpellings": [
+                "LT",
+                "Republic of Lithuania",
+                "Lietuvos Respublika"
+            ],
+            "region": "Europe",
+            "subregion": "Northern Europe",
+            "languages": {
+                "lit": "Lithuanian"
+            },
+            "translations": {
+                "ara": {
+                    "official": "جمهورية ليتوانيا",
+                    "common": "ليتوانيا"
+                },
+                "bre": {
+                    "official": "Republik Lituania",
+                    "common": "Lituania"
+                },
+                "ces": {
+                    "official": "Litevská republika",
+                    "common": "Litva"
+                },
+                "cym": {
+                    "official": "Republic of Lithuania",
+                    "common": "Lithuania"
+                },
+                "deu": {
+                    "official": "Republik Litauen",
+                    "common": "Litauen"
+                },
+                "est": {
+                    "official": "Leedu Vabariik",
+                    "common": "Leedu"
+                },
+                "fin": {
+                    "official": "Liettuan tasavalta",
+                    "common": "Liettua"
+                },
+                "fra": {
+                    "official": "République de Lituanie",
+                    "common": "Lituanie"
+                },
+                "hrv": {
+                    "official": "Republika Litva",
+                    "common": "Litva"
+                },
+                "hun": {
+                    "official": "Litván Köztársaság",
+                    "common": "Litvánia"
+                },
+                "ita": {
+                    "official": "Repubblica di Lituania",
+                    "common": "Lituania"
+                },
+                "jpn": {
+                    "official": "リトアニア共和国",
+                    "common": "リトアニア"
+                },
+                "kor": {
+                    "official": "리투아니아 공화국",
+                    "common": "리투아니아"
+                },
+                "nld": {
+                    "official": "Republiek Litouwen",
+                    "common": "Litouwen"
+                },
+                "per": {
+                    "official": "لیتوانیایی‌ها",
+                    "common": "لیتوانیایی‌ها"
+                },
+                "pol": {
+                    "official": "Republika Litewska",
+                    "common": "Litwa"
+                },
+                "por": {
+                    "official": "República da Lituânia",
+                    "common": "Lituânia"
+                },
+                "rus": {
+                    "official": "Литовская Республика",
+                    "common": "Литва"
+                },
+                "slk": {
+                    "official": "Litovská republika",
+                    "common": "Litva"
+                },
+                "spa": {
+                    "official": "República de Lituania",
+                    "common": "Lituania"
+                },
+                "srp": {
+                    "official": "Литванска Република",
+                    "common": "Литванија"
+                },
+                "swe": {
+                    "official": "Republiken Litauen",
+                    "common": "Litauen"
+                },
+                "tur": {
+                    "official": "Litvanya Cumhuriyeti",
+                    "common": "Litvanya"
+                },
+                "urd": {
+                    "official": "جمہوریہ لتھووینیا",
+                    "common": "لتھووینیا"
+                },
+                "zho": {
+                    "official": "立陶宛共和国",
+                    "common": "立陶宛"
+                }
+            },
+            "latlng": [
+                56,
+                24
+            ],
+            "landlocked": false,
+            "borders": [
+                "BLR",
+                "LVA",
+                "POL",
+                "RUS"
+            ],
+            "area": 65300,
+            "demonyms": {
+                "eng": {
+                    "f": "Lithuanian",
+                    "m": "Lithuanian"
+                },
+                "fra": {
+                    "f": "Lituanienne",
+                    "m": "Lituanien"
+                }
+            },
+            "flag": "🇱🇹",
+            "maps": {
+                "googleMaps": "https://goo.gl/maps/dd1s9rrLjrK2G8yY6",
+                "openStreetMaps": "https://www.openstreetmap.org/relation/72596"
+            },
+            "population": 2794700,
+            "gini": {
+                "2018": 35.7
+            },
+            "fifa": "LTU",
+            "car": {
+                "signs": [
+                    "LT"
+                ],
+                "side": "right"
+            },
+            "timezones": [
+                "UTC+02:00"
+            ],
+            "continents": [
+                "Europe"
+            ],
+            "flags": {
+                "png": "https://flagcdn.com/w320/lt.png",
+                "svg": "https://flagcdn.com/lt.svg",
+                "alt": "The flag of Lithuania is composed of three equal horizontal bands of yellow, green and red."
+            },
+            "coatOfArms": {
+                "png": "https://mainfacts.com/media/images/coats_of_arms/lt.png",
+                "svg": "https://mainfacts.com/media/images/coats_of_arms/lt.svg"
+            },
+            "startOfWeek": "monday",
+            "capitalInfo": {
+                "latlng": [
+                    54.68,
+                    25.32
+                ]
+            },
+            "postalCode": {
+                "format": "LT-#####",
+                "regex": "^(?:LT)*(\\d{5})$"
+            }
+        }
+        ]
+}
