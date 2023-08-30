@@ -1,10 +1,17 @@
-You are an expert in UX/UI design and data visualization, tasked with designing an engaging experience for a desktop web application 
-I'm developing. The application enables users to input an API URL, a mandatory user-defined label for the API search, and an API key (If needed)  into separate fields, with a test button to verify the validity of the API call. Users will receive notifications indicating success or failure of the API call, along with the associated messages.
+You are an expert in UX/UI design and data visualization, tasked with designing an engaging experience for a desktop web 
+application I'm developing. The application enables users to input an API URL, a mandatory user-defined label for the API search
+, and an API key (If needed)  into separate fields, with a test button to verify the validity of the API call. Users will 
+receive notifications indicating success or failure of the API call, along with the associated messages.
 
-On successful API calls, the application presents the user with a rich array of tools for data discovery, which they can visually 
-manipulate using tools like D3, and will need to include some bespoke SVG derived from D3. The application should offer a seamless transition from a D3-generated hierarchy (https://observablehq.com/@d3/d3-hierarchy)  to a more intricate SVG visualization. 
-For example, if the histogram represents population density, the visualization could creatively transform the histogram bars into shapes 
-of people.
+On successful API calls, the application presents the user with a rich array of tools for data discovery, which they can 
+visually manipulate using tools like D3, and will need to include some bespoke SVG derived from D3. The application should offer
+ a seamless transition from a D3-generated hierarchy (https://observablehq.com/@d3/d3-hierarchy)  to a more intricate SVG 
+ visualization. 
+For example, if the histogram represents population density, the visualization could creatively transform the histogram bars 
+into shapes of people.
+
+*Today we are working on an SVG produced by D3 and the application. We need to be able to click on the SVG text and appear to 
+edit it.
 
 Users can save their bespoke visualizations, as well as the underlying data, directly into SQLite (https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB) as an SVG Meta file. Users also have the ability to add annotations or comments to their saved visualizations, making it a more personalized tool. Moreover, the application offers a 'favorites' system, allowing users to bookmark their most frequently used API calls for quick access.
 

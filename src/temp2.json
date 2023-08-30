@@ -1,157 +1,20 @@
-Failing structure
 {
     "id": 2,
     "url": "https://jsonplaceholder.typicode.com/todos",
     "visualizationName": "todos",
-    "data": "",
+    "data": "[{'userId':1,'id':1,'title':'delectus aut autem','completed':false},{'userId':1,'id':2,'title':'quis ut nam facilis et officia qui','completed':false},{'userId':1,'id':3,'title':'fugiat veniam minus','completed':false},{'userId':1,'id':18,'title':'dolorum est consequatur ea mollitia in culpa','completed':false},{'userId':1,'id':19,'title':'molestiae ipsa aut voluptatibus pariatur dolor nihil','completed':true},{'userId':1,'id':20,'title':'ullam nobis libero sapiente ad optio sint','completed':true},{'userId':5,'id':98,'title':'debitis accusantium ut quo facilis nihil quis sapiente necessitatibus','completed':true},{'userId':5,'id':99,'title':'neque voluptates ratione','completed':false},{'userId':5,'id':100,'title':'excepturi a et neque qui expedita vel voluptate','completed':false},{'userId':6,'id':101,'title':'explicabo enim cumque porro aperiam occaecati minima','completed':false},{'userId':6,'id':102,'title':'sed ab consequatur','completed':false},{'userId':6,'id':103,'title':'non sunt delectus illo nulla tenetur enim omnis','completed':false},{'userId':6,'id':104,'title':'excepturi non laudantium quo','completed':false},{'userId':6,'id':105,'title':'totam quia dolorem et illum repellat voluptas optio','completed':true},{'userId':6,'id':106,'title':'ad illo quis voluptatem temporibus','completed':true},{'userId':6,'id':107,'title':'praesentium facilis omnis laudantium fugit ad iusto nihil nesciunt','completed':false},{'userId':6,'id':108,'title':'a eos eaque nihil et exercitationem incidunt delectus','completed':true},{'userId':7,'id':122,'title':'provident aut nobis culpa','completed':true},{'userId':7,'id':123,'title':'esse et quis iste est earum aut impedit','completed':false},{'userId':7,'id':124,'title':'qui consectetur id','completed':false},{'userId':7,'id':125,'title':'aut quasi autem iste tempore illum possimus','completed':false},{'userId':7,'id':126,'title':'ut asperiores perspiciatis veniam ipsum rerum saepe','completed':true},{'userId':7,'id':127,'title':'voluptatem libero consectetur rerum ut','completed':true},{'userId':7,'id':128,'title':'eius omnis est qui voluptatem autem','completed':false},{'userId':7,'id':129,'title':'rerum culpa quis harum','completed':false},{'userId':7,'id':130,'title':'nulla aliquid eveniet harum laborum libero alias ut unde','completed':true},{'userId':7,'id':131,'title':'qui ea incidunt quis','completed':false},{'userId':8,'id':142,'title':'maiores accusantium architecto necessitatibus reiciendis ea aut','completed':true},{'userId':8,'id':143,'title':'eum non recusandae cupiditate animi','completed':false}]",
     "response": [
-        {
-            "userId": 3,
-            "id": 56,
-            "title": "deleniti ea temporibus enim",
-            "completed": true
-        },
-        {
-            "userId": 6,
-            "id": 110,
-            "title": "aut aut ea corporis",
-            "completed": true
-        }
+      {
+        "userId": 6,
+        "id": 108,
+        "title": "a eos eaque nihil et exercitationem incidunt delectus",
+        "completed": true
+      },
+      {
+        "userId": 7,
+        "id": 131,
+        "title": "qui ea incidunt quis",
+        "completed": false
+      }
     ]
-}
-
-Working structure
-{
-    "name": "Root",
-    "children": [
-        {
-            "name": "England",
-            "children": [
-                {
-                    "name": "Charlton",
-                    "number": "x"
-                },
-                {
-                    "name": "Moore",
-                    "number": "x"
-                },
-                {
-                    "name": "Banks",
-                    "number": "x"
-                },
-                {
-                    "name": "Bell",
-                    "number": "x"
-                },
-                {
-                    "name": "Wilson",
-                    "number": "7"
-                },
-                {
-                    "name": "Hurst",
-                    "number": "x"
-                },
-                {
-                    "name": "Campbell",
-                    "number": "7"
-                },
-                {
-                    "name": "Brown",
-                    "number": "x"
-                }
-            ]
-        },
-        {
-            "name": "Portugal",
-            "children": [
-                {
-                    "name": "Eusebio",
-                    "number": "7"
-                },
-                {
-                    "name": "Santos",
-                    "number": "x"
-                },
-                {
-                    "name": "Rodriguez",
-                    "number": "7"
-                },
-                {
-                    "name": "Ferreira",
-                    "number": "x"
-                }
-            ]
-        },
-        {
-            "name": "Hungary",
-            "children": [
-                {
-                    "name": "Puskas",
-                    "number": "9"
-                },
-                {
-                    "name": "Nagy",
-                    "number": "x"
-                }
-            ]
-        },
-        {
-            "name": "France",
-            "children": [
-                {
-                    "name": "Fontaine",
-                    "number": "9"
-                },
-                {
-                    "name": "Kopa",
-                    "number": "x"
-                }
-            ]
-        },
-        {
-            "name": "Soviet Union",
-            "children": [
-                {
-                    "name": "Yashin",
-                    "number": "9"
-                }
-            ]
-        },
-        {
-            "name": "Brazil",
-            "children": [
-                {
-                    "name": "Pele",
-                    "number": "x"
-                }
-            ]
-        },
-        {
-            "name": "Germany",
-            "children": [
-                {
-                    "name": "Albert",
-                    "number": "x"
-                }
-            ]
-        },
-        {
-            "name": "Argentina",
-            "children": [
-                {
-                    "name": "Fernandez",
-                    "number": "x"
-                }
-            ]
-        },
-        {
-            "name": "Spain",
-            "children": [
-                {
-                    "name": "Ramos",
-                    "number": "x"
-                }
-            ]
-        }
-    ]
-}
+  }
