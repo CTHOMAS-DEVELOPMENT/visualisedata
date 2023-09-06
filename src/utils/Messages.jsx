@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from "react"; // <-- ADDED useState and useEffect
 
 export const getErrorForClickObjectNodeOnEditor = (name) =>
-  `Info: You clicked on ${name} but this has no data`;
+  `Error: You clicked on ${name} but this has no data`;
 const deriveType = (msg) => {
   const type = msg.split(":")[0].trim();
 

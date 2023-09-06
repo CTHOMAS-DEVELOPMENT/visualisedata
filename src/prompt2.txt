@@ -31,3 +31,5 @@ For new users, the application should offer a guided tutorial highlighting its f
 visualizations. This tutorial will aid in familiarizing users with the system and encouraging exploration of the application's capabilities.
 
 Finally, provide a user journey narrative illustrating a user retrieving information about different independent countries and visually exploring various characteristics like population, area, languages, etc.
+
+PUSH git push origin frontend:main
