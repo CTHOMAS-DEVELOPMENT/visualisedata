@@ -42,6 +42,7 @@ const ApiInputValidation = () => {
     const result = await callApi(url, apiKey);
 
     if (result.data) {
+      console.log("result.data",result.data)
       // Save the response to SQLite
       // We send a message to the main process to save the data, passing the necessary parameters
       window.api.send("save-data", {

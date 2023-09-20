@@ -26,6 +26,15 @@ export const saveData = (url, visualizationName, data) => {
   stmt.finalize();
 };
 
+export const updateData = (url, visualizationName, updatedData) => {
+  let stmt = db.prepare(`
+    INSERT OR REPLACE INTO responses (url, name, response, timestamp)
+    VALUES (?, ?, ?, ?)
+  `);
+
+  stmt.run(url, visualizationName, JSON.stringify(updatedData), new Date().toISOString());
+  stmt.finalize();
+};
 export const getData = (url) => {
   return new Promise((resolve, reject) => {
     db.get(`SELECT * FROM responses WHERE url = ?`, [url], (err, row) => {

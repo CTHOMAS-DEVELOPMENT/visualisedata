@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-    entry: './path-to-your-entry-file.js', // Replace with your entry file
+    entry: './src/index.js', // Replace with your entry file
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js', // Or your preferred filename
@@ -22,7 +22,10 @@ module.exports = {
             "fs": false, // 'fs' is not available in the browser so we set it to false
         }
     },
-
+    externals: {
+        fs: 'commonjs fs', // Exclude 'fs' module
+        path: 'path',      // Include 'path' module
+      },
     module: {
       rules: [
         {
