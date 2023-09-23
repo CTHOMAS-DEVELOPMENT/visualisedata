@@ -1,14 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
 import { select, hierarchy, tree, linkVertical } from "d3";
+import {} from "d3";
 import { useNavigate, useLocation } from "react-router-dom";
-//import { updateData } from "../db/database"
 import {
   convertToHierarchyData,
   exportToPDF,
   findStringInData,
   updateDataWithUserInput,
   formatWideTexts,
-  getWidthOfWordInSVG
+  getWidthOfWordInSVG,
 } from "../../utils/hierarchyUtils";
 import Messages, {
   getErrorForClickObjectNodeOnEditor,
@@ -22,12 +22,16 @@ const D3HierarchyChart = () => {
   const [hasChanges, setHasChanges] = useState(false);
   const [message, setMessage] = useState("");
   const [isVisible, setIsVisible] = useState(false);
-  const [aspectRatio, setAspectRatio] = useState(0.7);
+  const [zoomTo, setZoomTo] = useState(1);
   const [inputValue, setInputValue] = useState("");
+  const [zoomValueRange, setoomValueRange] = useState(
+    Array.from({ length: 21 }, (_, i) => i)
+  );
 
   const navigate = useNavigate();
   const handleAspectRatioChange = (event) => {
-    setAspectRatio(parseFloat(event.target.value));
+    const newZoomTo = parseFloat(event.target.value);
+    setZoomTo(newZoomTo);
   };
 
   const makeTextEditable = (event, d, node) => {
@@ -78,10 +82,7 @@ const D3HierarchyChart = () => {
       setInputValue(e.target.value);
     });
     input.addEventListener("blur", function () {
-      //9999console.log("blur inputValue",inputValue)
-
       const newValue = this.value;
-      //999console.log("blur newValue",newValue);
       const fullValue = prefix ? `${prefix}: ${newValue}` : newValue;
       d.data.name = fullValue;
       textElem.text(fullValue).style("display", "");
@@ -121,8 +122,8 @@ const D3HierarchyChart = () => {
       const svg = select(svgRef.current);
       const containerWidth = svg.node().getBoundingClientRect().width;
       const width = containerWidth;
-      const height = containerWidth * aspectRatio;
-
+      const height = containerWidth * zoomTo;
+      let rectSize = width * 0.2;
       svg.attr("viewBox", `0 0 ${width} ${height}`);
       const maxDepth = root.height;
       const levelHeight = height / maxDepth;
@@ -182,6 +183,7 @@ const D3HierarchyChart = () => {
 
           window.addEventListener("mousemove", onMouseMove);
           window.addEventListener("mouseup", onMouseUp);
+          
         });
       node
         .append("circle")
@@ -204,7 +206,6 @@ const D3HierarchyChart = () => {
               const regex = /:(\s*\{.*\})$/;
 
               if (regex.test(d.data.name)) {
-                
                 //const returnValue = d.data.name.split(":")[0].trim();
                 const returnValue = d.data.name.split(/:(.+)/)[0].trim();
                 return returnValue; // retain only the text before the colon
@@ -274,11 +275,22 @@ const D3HierarchyChart = () => {
 
       svg.selectAll("circle").lower();
       svg.selectAll("text").raise();
+
+
+      rectSize = svg.node().getBoundingClientRect().width * 0.2;
+      // Add this block to add a small blue rectangle
+      svg
+      .append("rect")
+      .attr("y", height - (rectSize )) // Position it at the bottom
+      .attr("x", 0) // Position it at the left edge
+      .attr("width", rectSize) // 20% of the width of the main SVG
+      .attr("height", rectSize)
+      .attr("fill", "blue");
+
     }
-  }, [treeData, size, aspectRatio]);
+  }, [treeData, size, zoomTo]);
   useEffect(() => {
     const handleUpdateResponse = (message) => {
-      console.log(message);
       setMessage(`Information:${message}`);
       setIsVisible(true);
     };
@@ -289,15 +301,29 @@ const D3HierarchyChart = () => {
       window.api.remove("update-data-response", handleUpdateResponse); // If you've implemented a remove function.
     };
   }, []);
+
+  useEffect(() => {
+    // (4) Dragging functionality for the 'action navigation rectangle'
+    // Dragging logic should be added here
+  }, []);
   const goToMenu = () => {
     navigate("/apiform");
   };
   return (
     <div className="hierarchy-chart">
-      <button className="menu-button" onClick={goToMenu}>
-        &lt;- Menu
-      </button>
-      <svg ref={svgRef} className="hierarchy-chart" />
+      {!treeData ? (
+        <div>Loading...</div>
+      ) : (
+        <svg id="mainSVG" ref={svgRef} className="hierarchy-chart">
+          <defs>
+            <radialGradient id="ballGradient" cx="0.5" cy="0.5" r="0.5">
+              <stop offset="0%" stopColor="#ffcc00" stopOpacity="1" />
+              <stop offset="100%" stopColor="#ff9800" stopOpacity="1" />
+            </radialGradient>
+          </defs>
+        </svg>
+      )}
+
       {hasChanges && ( // <-- Conditional rendering
         <button
           onClick={() => {
@@ -328,6 +354,9 @@ const D3HierarchyChart = () => {
           Save
         </button>
       )}
+      <button className="menu-button" onClick={goToMenu}>
+        &lt;- Menu
+      </button>
       <button
         onClick={() => {
           if (svgRef && svgRef.current) {
@@ -349,19 +378,21 @@ const D3HierarchyChart = () => {
         onOutsideClick={() => setIsVisible(false)}
       />
       <div>{inputValue}</div>
-      <h1 className="fontHeader">{treeData.visualizationName}</h1>
+      <h1 className="fontHeader">
+        {treeData?.visualizationName || "Loading..."}
+      </h1>
       <h3>{treeData.url}</h3>
-      <label htmlFor="aspectRatio">Aspect Ratio:</label>
+      <label htmlFor="zoomTo">Aspect Ratio:</label>
       <select
-        id="aspectRatio"
-        value={aspectRatio}
+        id="zoomTo"
+        value={zoomTo}
         onChange={handleAspectRatioChange}
       >
-        <option value="0.5">50%</option>
-        <option value="0.7">70%</option>
-        <option value="1">100%</option>
-        <option value="2">200% (Height is double the width)</option>
-        <option value="3">300% (Height is three times the width)</option>
+        {zoomValueRange.map((ratio) => (
+          <option key={ratio} value={ratio}>
+            {ratio}X
+          </option>
+        ))}
       </select>
     </div>
   );

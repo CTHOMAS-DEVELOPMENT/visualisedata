@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./ApiInputValidation.css";
+import {appendApiKeyToUrl} from "../../utils/hierarchyUtils";
 const ApiInputValidation = () => {
   const [visualizationName, setVisualizationName] = useState("");
   const [apiCallStatus, setApiCallStatus] = useState("");
@@ -10,6 +11,7 @@ const ApiInputValidation = () => {
   const [urlError, setUrlError] = useState("");
 
   const callApi = async (url, apiKey) => {
+    url = appendApiKeyToUrl(url, apiKey);
     try {
       const response = await fetch(url, {
         method: "GET",
@@ -40,15 +42,20 @@ const ApiInputValidation = () => {
     setTestButtonDisabled(true);
 
     const result = await callApi(url, apiKey);
-
+    let resultDataArray=[];
     if (result.data) {
-      console.log("result.data",result.data)
+      // Check if result.data is an array
+      if (Array.isArray(result.data)) {
+        resultDataArray=result.data;
+      } else {
+        resultDataArray.push(result.data);
+      }
       // Save the response to SQLite
       // We send a message to the main process to save the data, passing the necessary parameters
       window.api.send("save-data", {
         url,
         visualizationName,
-        data: result.data,
+        data: resultDataArray,
       });
       // Listen for the 'data-saved' message from the main process
       window.api.receive("data-saved", () => {
@@ -160,7 +167,7 @@ const ApiInputValidation = () => {
         </button>
       </div>
       <div className="status-message">
-        <p>{apiCallStatus}</p>
+        <p className="fontLog">{apiCallStatus}</p>
       </div>
     </form>
   );

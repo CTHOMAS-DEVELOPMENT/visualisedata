@@ -14,6 +14,19 @@ export const logSVG = (svgRef) => {
   const svgContent = svgRef.current.outerHTML;
   console.log(svgContent);
 }
+/*Api input*/
+export const appendApiKeyToUrl = (url, apiKey) => {
+  const parsedUrl = new URL(url); // Will throw an error if the URL is invalid
+
+  // Check if 'key' is already in the URL
+  if (!parsedUrl.searchParams.has('key')) {
+    parsedUrl.searchParams.append('key', apiKey);
+  } else {
+    parsedUrl.searchParams.set('key', apiKey);
+  }
+
+  return parsedUrl.toString();
+};
 /**Hierachy Editor */
 
 

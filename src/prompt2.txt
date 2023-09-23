@@ -33,3 +33,9 @@ visualizations. This tutorial will aid in familiarizing users with the system an
 Finally, provide a user journey narrative illustrating a user retrieving information about different independent countries and visually exploring various characteristics like population, area, languages, etc.
 
 PUSH git push origin frontend:main
+git push origin backend:main
+
+https://api-docs.iqair.com/?version=latest
+Air quality api key d8653f41-fd13-4c61-b326-830de6fd52df
+
+http://api.airvisual.com/v2/countries?key=d8653f41-fd13-4c61-b326-830de6fd52df
